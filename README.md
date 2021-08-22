@@ -32,3 +32,8 @@ To start:
 3. Install the required packages as listed in the `“Required packages”`                                                                                            
 4. The project folder `website` has to be recognised as a package due to the `__init__.py` file                                                                                    
 5. Run `main.py` and open the link. Then click the link that directs you to the website
+
+# Link to the video demo of this web app!
+
+https://drive.google.com/file/d/1a927a3v_eAf4gIdcbjK5BTD-0S4JVleG/view?usp=sharing
+
