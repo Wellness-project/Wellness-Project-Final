@@ -10,13 +10,13 @@ The web app is designed to store user log in details, so that their journal inpu
 Requirements:
 [Python 3.9+](https://www.python.org/downloads/)
 
-Required packages:
-`mysql-connector`
-`mysql-connector-python`
-`matplotlib`
-`flask`
-`flask-sqlalchemy`
-`flask-login`
+Required packages:                                                                                                                                                
+`mysql-connector`                                                                                                                                                     
+`mysql-connector-python`                                                                                                                                                
+`matplotlib`                                                                                                                                                
+`flask`                                                                                                                                                
+`flask-sqlalchemy`                                                                                                                                                
+`flask-login`                                                                                                                                                                                                                                                                                                                                                      
 To install packages:
 `pip3 install mysql-connector`                                                                                                                                          
 `pip3 install mysql-connector-python`                                                                                                                                   
