@@ -20,13 +20,11 @@ views = Blueprint('views', __name__)
 @views.route("/mood", methods=['GET', 'POST'])  # creates a mood page by using the html document to create an interface
 def mood():
     if request.method == "POST":
-        # global selected_date
         selected_date = request.form.get('calendar')
         if selected_date == "":
             flash('Please select a date!', category='error')
         else:
             # mood levels in variables
-            # global happiness, fitness, sleep, nutrition, confidence  # not currently in use / might need later
             happiness = request.form.get("happiness")
             fitness = request.form.get("fitness")
             sleep = request.form.get("sleep")
@@ -83,7 +81,8 @@ def mood():
                         result = cur.fetchall()
                         mood_date = []
                         mood_average_for_date = []
-                        print("query has been passed into the database and executed")
+                        # printing to test the query before plotting the graph
+                        print("query to get average mood score has been passed into the database and executed")
 
                         for i in result:
                             mood_date.append(i[0])
@@ -101,6 +100,8 @@ def mood():
                         plt.ylabel("Average mood")
                         plt.title("Mood Tracker")
                         plt.show()
+                        # check if the graph has been shown in a pop-up
+                        print('the graph has been executed')
 
                         cur.close()
                     except Exception:
