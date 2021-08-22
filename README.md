@@ -11,13 +11,19 @@ Requirements:
 [Python 3.9+](https://www.python.org/downloads/)
 
 Required packages:
-`pip3 install mysql-connector`
-`pip3 install mysql-connector-python`
-`pip3 install matplotlib`
-`pip3 install flask`
-`pip3 install flask-sqlalchemy`
-`pip3 install flask-login`
-
+`mysql-connector`
+`mysql-connector-python`
+`matplotlib`
+`flask`
+`flask-sqlalchemy`
+`flask-login`
+To install packages:
+`pip3 install mysql-connector`                                                                                                                                          
+`pip3 install mysql-connector-python`                                                                                                                                   
+`pip3 install matplotlib`                                                                                                                                               
+`pip3 install flask`                                                                                                                                           
+`pip3 install flask-sqlalchemy`                                                                                                                                      
+`pip3 install flask-login`                                                                                                                                              
 
 # HOW TO RUN
 To start:
