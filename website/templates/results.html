@@ -1,0 +1,45 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mood</title>
+
+</head>
+<body>
+
+<h1 align="center">Today's mood</h1>
+
+<h2 align="center">Today your mood is {{mood}}</h2>
+
+<img src="{{mood_pic}}" >
+
+<p align="center">Date: {{date}}</p>
+
+
+
+
+</body>
+</html>
+ <style/>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+    background-image: linear-gradient(to right bottom, #ed4264a8, #ffedbca8);
+  }
+img { display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;}
+
+
+
+</style>
+{% endblock %}

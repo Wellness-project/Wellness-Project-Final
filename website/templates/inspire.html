@@ -1,0 +1,77 @@
+{% extends "base.html" %} {% block title %}Inspiration{% endblock %} {% block content%}
+
+<html lang="en">
+<head>
+    <title>quote</title>
+</head>
+<body>
+<h1>Quote of the day</h1>
+<p>
+    {{data}}
+</p>
+
+<h2>
+And your cat of the day!
+</h2>
+
+<img src="{{picture}}">
+
+<form name="cats" action="/inspiration" method="GET">
+    <div class="cat_submit" align="center">
+        <button type="submit" class="cat_submit">More cats!</button></div>
+
+</form>
+</body>
+</html>
+
+
+ <style/>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+    background-image: linear-gradient(to right bottom, #ed4264a8, #ffedbca8);
+  }
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+img {
+  width: 50%;
+position: relative;
+ float: left;
+}
+
+.cat_submit {
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #60a3bc;
+	padding: 20px;
+	border-radius: 50px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+}
+.cat_submit:hover {
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
+
+</style>
+{% endblock %}

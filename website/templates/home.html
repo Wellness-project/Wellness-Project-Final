@@ -1,0 +1,64 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+<html>
+<body>
+<h1 align="center">Journal Notes</h1>
+
+<h2 align="center">How are you doing today?</h2>
+<ul class="list-group list-group-flush" id="notes">
+
+  {% for note in user.notes %}
+  <li class="list-group-item">
+    {{ note.data }} Note added on: {{note.date}}
+    <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </li>
+  {% endfor %}
+</ul>
+
+<label for="start">Select date:</label>
+
+<form method="post">
+<input type="date" id="start" name="calendar"
+       min="2021-08-01" max="2050-12-31">
+
+
+<p align="center"> Things on my mind  </p>
+
+  <textarea name="note" id="note1" class="form-control" rows="12">Today I'm feeling...
+
+
+I want to improve:
+
+
+3 things I accomplished today:
+
+
+5 things I am grateful for today:
+
+
+</textarea>
+
+
+  <div align="center">
+    <button type="submit" class="btn btn-primary">Add a Note</button>
+  </div>
+</form>
+</body>
+</html>
+ <style/>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+    background-image: linear-gradient(to right bottom, #ed4264a8, #ffedbca8);
+  }
+
+</style>
+{% endblock %}
