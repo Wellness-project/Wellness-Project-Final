@@ -17,7 +17,7 @@ Required packages:
 `flask`                                                                                                                                                
 `flask-sqlalchemy`                                                                                                                                                
 `flask-login`                                                                                                                                                                                                                                                                                                                                                      
-To install packages:
+To install packages:                                                                                                                                                
 `pip3 install mysql-connector`                                                                                                                                          
 `pip3 install mysql-connector-python`                                                                                                                                   
 `pip3 install matplotlib`                                                                                                                                               
