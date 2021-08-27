@@ -9,6 +9,7 @@ The web app is designed to store user log in details, so that their journal inpu
 # GETTING SET UP
 Requirements:
 [Python 3.9+](https://www.python.org/downloads/)
+[MySQL 8.0+](https://dev.mysql.com/downloads/)
 
 Required packages:                                                                                                                                                
 `mysql-connector`                                                                                                                                                     
